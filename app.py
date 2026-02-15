@@ -1,33 +1,27 @@
 import streamlit as st
 import random
+import os
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
-st.set_page_config(page_title="Impostor/Camaleão", page_icon="🦎")
+st.set_page_config(page_title="Jogo do Camaleão", page_icon="🦎", layout="centered")
 
-# --- BANCO DE PALAVRAS (Pool Geral) ---
-# Adicione ou remova palavras à vontade nesta lista
-PALAVRAS_GERAIS = [
-    "Avião", "Bateria", "Cachorro-quente", "Dentista", "Elevador", 
-    "Futebol", "Geladeira", "Hambúrguer", "Igreja", "Jardim", 
-    "Ketchup", "Lâmpada", "Microfone", "Navio", "Óculos", 
-    "Piscina", "Queijo", "Relógio", "Sapato", "Televisão", 
-    "Urso", "Vassoura", "Xadrez", "Yoga", "Zebra",
-    "Bicicleta", "Astronauta", "Pizza", "Montanha Russa", "Pirata",
-    "Smartphone", "Notebook", "Café", "Sushi", "Praia",
-    "Violão", "Baixo", "Bateria", "Piano", "Flauta",
-    "Batman", "Harry Potter", "Coringa", "Sherlock Holmes",
-    "Brasil", "Japão", "França", "Itália", "Canadá"
-]
+# --- FUNÇÃO PARA CARREGAR PALAVRAS ---
+def carregar_palavras():
+    caminho = "palavras.txt"
+    if os.path.exists(caminho):
+        with open(caminho, "r", encoding="utf-8") as f:
+            return [linha.strip() for linha in f.readlines() if linha.strip()]
+    # Caso o arquivo não exista, retorna uma lista padrão para não quebrar o app
+    return ["Avião", "Bicicleta", "Cachorro", "Dente", "Elefante", "Futebol", "Guitarra"]
 
-# Inicialização das variáveis de estado
+# --- INICIALIZAÇÃO DO ESTADO ---
 if 'jogo_ativo' not in st.session_state:
     st.session_state.jogo_ativo = False
     st.session_state.dados_jogadores = {}
-    st.session_state.palavra_atual = ""
     st.session_state.seletor_jogador = "Jogador 1"
 
-# --- FUNÇÃO CALLBACK ---
-def proximo_jogador():
+# --- FUNÇÃO CALLBACK: PRÓXIMO JOGADOR ---
+def proximo_jogador_callback():
     lista_nomes = list(st.session_state.dados_jogadores.keys())
     nome_atual = st.session_state.seletor_jogador
     
@@ -38,31 +32,31 @@ def proximo_jogador():
     except ValueError:
         st.session_state.seletor_jogador = lista_nomes[0]
 
-# --- MENU LATERAL (Configurações Escondidas) ---
+# --- MENU LATERAL (CONFIGURAÇÕES) ---
 with st.sidebar:
     st.header("⚙️ Configurações")
     total_jogadores = st.number_input("Qtd de Jogadores", min_value=3, max_value=30, value=5)
     total_impostores = st.number_input("Qtd de Impostores", min_value=1, max_value=total_jogadores-2, value=1)
     
     if st.button("🚀 Iniciar/Resetar Jogo"):
-        # Sorteio de uma palavra aleatória do pool geral
-        palavra_secreta = random.choice(PALAVRAS_GERAIS)
+        pool_palavras = carregar_palavras()
+        palavra_secreta = random.choice(pool_palavras)
         
-        # Gerar IDs dos jogadores
+        # Gerar identificação automática dos jogadores
         ids_jogadores = [f"Jogador {i+1}" for i in range(total_jogadores)]
         
         # Sortear camaleões
         lista_camaleoes = random.sample(ids_jogadores, total_impostores)
         
-        # Atribuir papéis
+        # Atribuir palavras ou "CAMALEÃO"
         st.session_state.dados_jogadores = {
             pj: ("CAMALEÃO" if pj in lista_camaleoes else palavra_secreta) 
             for pj in ids_jogadores
         }
         
-        st.session_state.palavra_atual = palavra_secreta
         st.session_state.jogo_ativo = True
         st.session_state.seletor_jogador = ids_jogadores[0]
+        st.success("Jogo Gerado! Recolha este menu.")
         st.rerun()
 
 # --- TELA PRINCIPAL ---
@@ -70,11 +64,11 @@ st.title("🦎 Jogo do Camaleão")
 
 if st.session_state.jogo_ativo:
     st.write("### 📢 A rodada começou!")
-    st.write("Passe o aparelho para cada jogador e clique no botão para ver sua identidade.")
+    st.caption("Selecione seu número, veja sua palavra e passe para o próximo.")
     
     lista_nomes = list(st.session_state.dados_jogadores.keys())
     
-    # Seletor de jogador (Atualizado via callback)
+    # Selectbox controlado pelo session_state via chave 'seletor_jogador'
     escolha = st.selectbox(
         "Quem é você?", 
         options=lista_nomes, 
@@ -84,8 +78,8 @@ if st.session_state.jogo_ativo:
     col1, col2 = st.columns(2)
 
     with col1:
-        # Usamos uma chave dinâmica para o botão de revelar não "travar" entre jogadores
-        if st.button(f"👁️ Revelar para {escolha}", key=f"btn_rev_{escolha}"):
+        # Chave dinâmica para evitar que o botão fique "preso" no estado anterior
+        if st.button(f"👁️ Revelar para {escolha}", key=f"btn_{escolha}"):
             resultado = st.session_state.dados_jogadores[escolha]
             if resultado == "CAMALEÃO":
                 st.error(f"⚠️ VOCÊ É O **{resultado}**!")
@@ -93,10 +87,11 @@ if st.session_state.jogo_ativo:
                 st.success(f"Sua palavra é: **{resultado}**")
     
     with col2:
-        st.button("Limpar e Próximo ➡️", on_click=proximo_jogador)
+        # O callback atualiza o seletor ANTES de recarregar a página
+        st.button("Limpar e Próximo ➡️", on_click=proximo_jogador_callback)
 
     st.divider()
-    st.caption("Dica: O Camaleão deve tentar adivinhar a palavra secreta para vencer se for descoberto!")
+    st.info("Dica: Se você for o Camaleão, tente fingir que sabe a palavra!")
 
 else:
-    st.info("👋 Bem-vindo! Abra o menu lateral para definir o número de jogadores e começar a partida.")
+    st.warning("Aguardando configuração... Use o menu lateral (seta no topo esquerdo) para começar!")
