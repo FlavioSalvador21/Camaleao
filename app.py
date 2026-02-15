@@ -3,7 +3,16 @@ import random
 
 st.set_page_config(page_title="Camaleão", layout="centered")
 
-# Estados iniciais
+# Dicionário de categorias
+dicionario = {
+    "Animais": ["Cachorro", "Gato", "Elefante", "Leão", "Tigre", "Girafa"],
+    "Objetos": ["Mesa", "Cadeira", "Celular", "Relógio", "Caneta", "Livro"],
+    "Lugares": ["Praia", "Montanha", "Escola", "Shopping", "Hospital", "Parque"],
+    "Comidas": ["Pizza", "Hambúrguer", "Lasanha", "Sushi", "Feijoada", "Sorvete"],
+    "Profissões": ["Médico", "Professor", "Engenheiro", "Advogado", "Bombeiro", "Designer"]
+}
+
+# Estados
 if "contador" not in st.session_state:
     st.session_state.contador = 0
 
@@ -16,15 +25,21 @@ if "mostrar" not in st.session_state:
 if "palavra" not in st.session_state:
     st.session_state.palavra = ""
 
+if "palavra_fixa" not in st.session_state:
+    st.session_state.palavra_fixa = ""
+
 st.title("Passe o celular")
+
+categoria = st.selectbox("Escolha a categoria", list(dicionario.keys()))
 
 numero = st.number_input("Digite o número de pessoas", min_value=1, step=1)
 
-# Novo jogo quando muda o número
+# Novo jogo
 if st.button("Novo jogo"):
     st.session_state.contador = 0
     st.session_state.mostrar = False
     st.session_state.camaleao_index = random.randint(1, numero)
+    st.session_state.palavra_fixa = random.choice(dicionario[categoria])
     st.session_state.palavra = ""
 
 st.divider()
@@ -48,7 +63,7 @@ with col1:
         if st.session_state.contador == st.session_state.camaleao_index:
             st.session_state.palavra = "CAMALEÃO"
         else:
-            st.session_state.palavra = "PALAVRA"
+            st.session_state.palavra = st.session_state.palavra_fixa
 
 with col2:
     if st.button("ESCONDER", use_container_width=True):
