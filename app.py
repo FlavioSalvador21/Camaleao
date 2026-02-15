@@ -2,79 +2,80 @@ import streamlit as st
 import random
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
-st.set_page_config(page_title="Impostor Streamlit", page_icon="🦎")
+st.set_page_config(page_title="Impostor/Camaleão", page_icon="🦎", layout="centered")
 
-# Inicialização das variáveis de estado (se não existirem)
-if 'jogo_iniciado' not in st.session_state:
-    st.session_state.jogo_iniciado = False
-    st.session_state.jogadores_info = {} # Dicionário: {Nome: Papel}
-    st.session_state.palavra_rodada = ""
+# Inicialização do estado do jogo
+if 'jogo_ativo' not in st.session_state:
+    st.session_state.jogo_ativo = False
+    st.session_state.dados_jogadores = {}
+    st.session_state.tema = ""
 
-# --- MENU DE CONFIGURAÇÕES (SIDEBAR) ---
+# --- MENU LATERAL (CONFIGURAÇÕES) ---
 with st.sidebar:
-    st.header("⚙️ Configurações do Jogo")
+    st.header("⚙️ Configurações")
     
-    # 1. Quantidade de pessoas
-    num_jogadores = st.number_input("Total de Jogadores", min_value=3, max_value=20, value=4)
+    # Define quantidade de pessoas e impostores
+    total_jogadores = st.number_input("Qtd de Jogadores", min_value=3, max_value=30, value=5)
+    total_impostores = st.number_input("Qtd de Impostores", min_value=1, max_value=total_jogadores-2, value=1)
     
-    # 2. Quantidade de impostores
-    max_impostores = num_jogadores - 2  # Pelo menos 2 inocentes
-    num_impostores = st.number_input("Quantidade de Impostores", min_value=1, max_value=max_impostores, value=1)
+    # Lista de Temas (Podes expandir aqui)
+    biblioteca_temas = {
+        "Profissões": ["Bombeiro", "Astronauta", "Médico", "Chef de Cozinha", "Pescador"],
+        "Filmes": ["Star Wars", "Titanic", "Shrek", "Batman", "Vingadores"],
+        "Cidades": ["Rio de Janeiro", "Paris", "Tóquio", "Londres", "Nova York"]
+    }
     
-    # Entrada de nomes dinâmica
-    st.subheader("Nomes dos Participantes")
-    nomes_input = []
-    for i in range(num_jogadores):
-        nome = st.text_input(f"Jogador {i+1}", f"Jogador {i+1}", key=f"input_{i}")
-        nomes_input.append(nome)
+    tema_escolhido = st.selectbox("Escolha o Tema", list(biblioteca_temas.keys()))
 
-    # Botão para Gerar o Jogo
-    if st.button("Gerar Nova Rodada"):
-        # Temas simples para teste (podes expandir)
-        temas = {"Objetos": ["Cadeira", "Relógio", "Televisão"], "Lugar": ["Paris", "Cozinha", "Marte"]}
-        tema = random.choice(list(temas.keys()))
-        palavra = random.choice(temas[tema])
+    if st.button("🚀 Iniciar/Resetar Jogo"):
+        # Lógica de sorteio
+        palavra_secreta = random.choice(biblioteca_temas[tema_escolhido])
         
-        # Sorteio dos Impostores
-        impostores_escolhidos = random.sample(nomes_input, num_impostores)
+        # Criar lista de "IDs" de jogadores (Ex: Jogador 1, Jogador 2...)
+        ids_jogadores = [f"Jogador {i+1}" for i in range(total_jogadores)]
         
-        # Criar dicionário de papéis
-        progresso_jogo = {}
-        for nome in nomes_input:
-            progresso_jogo[nome] = "CAMALEÃO" if nome in impostores_escolhidos else palavra
+        # Sortear quem serão os camaleões
+        lista_camaleoes = random.sample(ids_jogadores, total_impostores)
+        
+        # Atribuir palavras
+        dict_jogo = {}
+        for pj in ids_jogadores:
+            dict_jogo[pj] = "CAMALEÃO" if pj in lista_camaleoes else palavra_secreta
             
-        # Salvar no estado
-        st.session_state.jogadores_info = progresso_jogo
-        st.session_state.palavra_rodada = palavra
-        st.session_state.tema_rodada = tema
-        st.session_state.jogo_iniciado = True
-        st.success("Jogo configurado! Fecha o menu e joga.")
+        st.session_state.dados_jogadores = dict_jogo
+        st.session_state.tema = tema_escolhido
+        st.session_state.jogo_ativo = True
+        st.success("Jogo Gerado! Recolha o menu lateral.")
 
-# --- PÁGINA PRINCIPAL ---
+# --- TELA PRINCIPAL ---
 st.title("🦎 Jogo do Camaleão")
 
-if not st.session_state.jogo_iniciado:
-    st.info("Configura o jogo no menu lateral e clica em 'Gerar Nova Rodada' para começar!")
-else:
-    st.subheader(f"Tema: {st.session_state.tema_rodada}")
-    
-    # Seleção de quem vai ver a palavra agora
-    jogador_vez = st.selectbox("Quem vai ver a palavra?", list(st.session_state.jogadores_info.keys()))
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        if st.button(f"Revelar para {jogador_vez}"):
-            resultado = st.session_state.jogadores_info[jogador_vez]
+if st.session_state.jogo_ativo:
+    st.info(f"**TEMA:** {st.session_state.tema}")
+    st.write("Passe o dispositivo para cada jogador selecionar o seu número.")
+
+    # Seletor para o jogador atual
+    opcoes = ["-- Selecione seu Número --"] + list(st.session_state.dados_jogadores.keys())
+    escolha = st.selectbox("Quem é você?", options=opcoes)
+
+    if escolha != "-- Selecione seu Número --":
+        # Botão para revelar a palavra (usa o estado para não sumir no clique)
+        if st.button(f"Revelar palavra para {escolha}"):
+            resultado = st.session_state.dados_jogadores[escolha]
+            
             if resultado == "CAMALEÃO":
-                st.error(f"Tu és o **{resultado}**!")
+                st.error(f"⚠️ VOCÊ É O **{resultado}**!")
+                st.caption("Tente descobrir a palavra secreta ouvindo as dicas dos outros.")
             else:
-                st.success(f"A palavra é: **{resultado}**")
-    
-    with col2:
-        if st.button("Esconder Palavra"):
+                st.success(f"Sua palavra é: **{resultado}**")
+                st.caption("Dê uma dica sutil para provar que você sabe a palavra.")
+        
+        if st.button("Limpar Tela (Próximo Jogador)"):
             st.rerun()
 
     st.divider()
-    if st.checkbox("Revelar todos os papéis (Fim do Jogo)"):
-        st.write(st.session_state.jogadores_info)
+    # Opção para o fim da rodada
+    if st.checkbox("Mostrar todos os papéis"):
+        st.write(st.session_state.dados_jogadores)
+else:
+    st.warning("Aguardando configuração... Use o menu lateral (setinha no topo esquerdo) para começar!")
