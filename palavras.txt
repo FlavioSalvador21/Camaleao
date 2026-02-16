@@ -1,7 +1,6 @@
 Rocket League
 Contrabaixo
 Maracanã
-Rossi
 Libertadores
 Flamengo
 PlayStation
@@ -213,819 +212,506 @@ Abadá
 Segurança
 Pulseira VIP
 Credencial
-Alegria
-Amizade
-Brio
-Beleza
-Bênção
-Barganha
-Bola
-Beldade
-Bárbaro
 Brasil
-Brisa
-Bochecha
-Boemia
-Bolo
-Brincadeira
-Branco
-Cultura
-Céu
-Clichê
-Companhia
-Cerne
-Coragem
-Ciência
-Conhecimento
-Casa
-Canalha
-Caridade
-Colapso
-Cuidado
-Casal
-Dicionário
-Devaneio
-Dádiva
-Democracia
-Deboche
-Diversidade
-Dimensão
-Disciplina
-Dengo
-Desejo
-Desafio
-Diferença
-Destreza
-Dom
-Dignidade
-Desprezo
-Doutrina
-Dúvida
-Dificuldade
-Digno
-Empatia
-Exceção
-Essência
-Estória
-Esperança
-Extraordinário
-Expectativa
-Experiência
-Espectro
-Excelência
-Expressão
-Epifania
-Erudito
-Excesso
-Estereótipo
-Esplêndido
-Empecilho
-Excelente
-Estúpido
-Exótico
-Etnia
-Exílio
-Ego
-Fato
-Família
-Felicidade
-Facção
-Fundamento
-Fenômeno
-Fraternidade
-Formidável
-Faceta
-Formoso
-Fidelidade
-Forte
-Filantropo
-Fanfarrão
-Facínora
-Fase
-Feliz
-Falso
-Franco
-Forma
-Florão
-Foco
-Face
-Feição
-Fascismo
-Filosofia
-Fluxo
-Façanha
-Fundamental
-Função
-Falta
-Favor
-Força
-Farsa
-Fator
-Frio
-Fonte
-Fraude
-Fortaleza
-Genuíno
-Gratidão
-Gentil
-Glória
-Genérico
-Generoso
-Graça
-Genro
-Grande
-Ganância
-Grotesco
-Gênero
-Gênese
-Garbo
-Generosidade
-Gentileza
-Genioso
-Gênio
-Geração
-Gente
-Gama
-Gesto
-Grátis
-Gestão
-Gratuito
-Guia
-Guarida
-Gostoso
-Gramática
-Grupo
-Grau
-Guerra
-Glossário
-Genitor
-Girassol
-Gato
-Grosso
-Genitora
-Gana
-Grave
-Galardão
-Geografia
-Guarda
-Grandeza
-Guardião
-Gosto
-Galante
-Grosseiro
-Geral
-Galera
-Hipocrisia
-Hostil
-História
-Honra
-Hábito
-Humildade
-Harmonia
-Híbrido
-Holístico
-Hábil
-Honestidade
-Hierarquia
-Homem
-Habilidade
-Humilde
-Herói
-Humanidade
-Hilário
-Hombridade
-Hostilidade
-Honesto
-Humor
-Hereditário
-Hiato
-Horda
-Humano
-Histórico
-Homenagem
-Honrado
-Horizonte
-Hipérbole
-Holocausto
-Heroico
-Hora
-Harmonioso
-Histeria
-Humilhação
-Herança
-Impressão
-Idílico
-Inspiração
-Invasivo
-Incidente
-Icônico
-Inóspito
-Impetuoso
-Infame
-Intensidade
-Ideia
-Intervenção
-Importante
-Incrível
-Ignorante
-Imparcial
-Inato
-Interesse
-Indiferença
-Imersão
-Instância
-Itinerário
-Integridade
-Intenção
-Insensato
-Insólito
-Intenso
-Interação
-Importância
-Idoneidade
-Impacto
-Indivíduo
-Isento
-Ingratidão
-Interlocutor
-Justo
-Júbilo
-Justiça
-Jeito
-Joia
-Jovem
-Jovial
-Jardim
-Jornada
-Jurista
-Julgamento
-Juiz
-Judeu
-Janela
-Jogo
-Jazigo
-Juvenil
-Juventude
-Jornal
-Jacaré
-Jeitoso
-Jipe
-Jabuti
-Judicial
-Joelho
-Jantar
-Juro
-Jumento
-Kit
-Kamikaze
-Ketchup
-Karaokê
-Kiwi
-Know-how
-Kart
-Kung fu
-Legado
-Luxúria
-Larica
-Litígio
-Limiar
-Liberdade
-Leviano
-Lúdico
-Límpido
-Lapso
-Lealdade
-Lascivo
-Libertinagem
-Latente
-Lúgubre
-Linear
-Lírico
-Lunático
-Logradouro
-Louco
-Limbo
-Luz
-Limite
-Lúcido
-Lacuna
-Legal
-Lícito
-Longevidade
-Linda
-Lugar
-Léxico
-Lembrança
-Lua
-Lastro
-Lucidez
-Lânguido
-Lástima
-Laico
-Legitimidade
-Leigo
-Líder
-Leviandade
-Labor
-Labuta
-Lume
-Ladino
-Leito
-Lisonja
-Literal
-Luta
-Língua
-Lazer
-Livro
-Liame
-Legenda
-Lacônico
-Lisura
-Lamento
-Leal
-Lei
-Maturidade
-Mister
-Mito
-Modéstia
-Mérito
-Medíocre
-Mórbido
-Monótono
-Mesquinho
-Mãe
-Moral
-Maestria
-Modesto
-Magnânimo
-Mulher
-Moleque
-Medo
-Meticuloso
-Mazela
-Metáfora
-Magnífico
-Miserável
-Mote
-Militância
-Maledicência
-Moléstia
-Melancólico
-Melhor
-Misericórdia
-Mundo
-Mesquinhez
-Mudança
-Minucioso
-Mediocridade
-Menção
-Método
-Martírio
-Melindre
-Momento
-Maravilhoso
-Modalidade
-Maroto
-Magnitude
-Mercenário
-Meio
-Melindroso
-Manso
-Mensurável
-Meta
-Mágoa
-Manancial
-Meiga
-Mártir
-Metamorfose
-Marasmo
-Melancolia
-Multifacetado
-Matiz
-Monotonia
-Mobilidade
-Missão
-Morte
-Modelo
-Monopólio
-Mistério
-Mansidão
-Maçante
-Maleável
-Militante
-Negro
-Nobre
-Nocivo
-Necessidade
-Notívago
-Nostalgia
-Nuance
-Necessário
-Notório
-Natureza
-Negligência
-Nômade
-Neném
-Nativo
-Nojo
-Novo
-Nicho
-Noção
-Noite
-Nexo
-Natural
-Notável
-Nomenclatura
-Nobreza
-Nome
-Negligente
-Nato
-Nominal
-Nítido
-Nostálgico
-Narcisista
-Naturalidade
-Normal
-Nação
-Narrativa
-Nojento
-Norma
-Nascer
-Namorar
-Nível
-Neutro
-Negócio
-Notícia
-Nacionalidade
-Núcleo
-Navio
-Novidade
-Natal
-Nepotismo
-Número
-Ordinário
-Orgulho
-Objetivo
-Otário
-Obstinado
-Oriundo
-Ocioso
-Opróbrio
-Objeto
-Ousadia
-Oportunista
-Orgânico
-Opinião
-Obséquio
-Onírico
-Origem
-Ortodoxo
-Obsceno
-Obsessão
+Estados Unidos
+França
+Itália
+Alemanha
+China
+Reino Unido
+Portugal
+Espanha
+Argentina
+Canadá
+México
+Egito
+Índia
+Austrália
+Rússia
+Coreia do Sul
+Grécia
+Turquia
+Suíça
+Holanda
+Suécia
+África do Sul
+Tailândia
+Colômbia
+Uruguai
+Chile
+Bélgica
+Noruega
+Israel
+Irlanda
+Arábia Saudita
+Catar
+Mónaco
+Jamaica
+Peru
+Marrocos
+Vietnã
+Indonésia
+Áustria
+Dinamarca
+Croácia
+Cuba
+Coreia do Norte
+Polônia
+Filipinas
+Nigéria
+Ucrânia
+Paris
+Londres
+Nova York
+Roma
+Tóquio
+Madrid
+Lisboa
+Berlim
+Washington
+Buenos Aires
+Pequim
+Moscovo
+Rio de Janeiro
+Cairo
+Atenas
+Amesterdão
+Viena
+Praga
+Bangkok
+Seul
+Dubai
+Jerusalém
+Cidade do México
+Toronto
+Sidney
+Veneza
+Munique
+Barcelona
+Istambul
+Budapeste
+Estocolmo
+Oslo
+Dublin
+Copenhaga
+Bruxelas
+Zurique
+Havana
+Santiago
+Bogotá
+Lima
+Montevidéu
+Brasília
+Kioto
+Pisa
+Florença
+Cannes
+Las Vegas
+Croissant
+Espaguete
+Paella
+Risoto
+Gelato
+Hot Dog
+Batata Frita
+Donut
+Guacamole
+Kebab
+Ceviche
+Ratatouille
+Poke
+Peking Duck
+Bacalhau
+Curry
+Falafel
+Hummus
+Tiramisu
+Cheesecake
+Brownie
+Pancake
+Waffle
+Burrito
+Nacho
+Dim Sum
+Sashimi
+Mousse de Chocolate
+Petit Gateau
+Strogonoff
+Fondue
+Cristiano Ronaldo
+Lionel Messi
+Neymar
+Michael Jordan
+LeBron James
+Tiger Woods
+Lewis Hamilton
+Serena Williams
+Marta
+Gabriel Medina
+Pelé
+Maradona
+Usain Bolt
+Roger Federer
+Tom Brady
+Beyoncé
+Taylor Swift
+Rihanna
+Lady Gaga
+Madonna
+Michael Jackson
+Freddie Mercury
+Elvis Presley
+Anitta
+Ludmilla
+Caetano Veloso
+Gilberto Gil
+Paul McCartney
+Mick Jagger
+Adele
+Justin Bieber
+Drake
+Ed Sheeran
+Ariana Grande
+Billie Eilish
+Leonardo DiCaprio
+Brad Pitt
+Angelina Jolie
+Tom Cruise
+Will Smith
+Meryl Streep
+Robert Downey Jr
+Scarlett Johansson
+Johnny Depp
+Margot Robbie
+Zendaya
+The Rock
+Vin Diesel
+Keanu Reeves
+Morgan Freeman
+Steven Spielberg
+Christopher Nolan
+Elon Musk
+Bill Gates
+Steve Jobs
+Mark Zuckerberg
+Jeff Bezos
+Albert Einstein
+Isaac Newton
+Stephen Hawking
+Marie Curie
+Charles Darwin
+Leonardo da Vinci
+Vincent van Gogh
+Pablo Picasso
+Salvador Dalí
+Machado de Assis
+William Shakespeare
+JK Rowling
+Stephen King
+Silvio Santos
+Faustão
+Xuxa
+Angélica
+Luciano Huck
+Gisele Bündchen
+Papa Francisco
+Dalai Lama
+Malala Yousafzai
+Michelle Obama
+Barack Obama
+Donald Trump
+Vladimir Putin
+Angela Merkel
+Princesa Diana
+Rainha Elizabeth
+Ayrton Senna
+Tite
+Abel Ferreira
+Casimiro
+Alok
+Whindersson Nunes
+Felipe Neto
+Fernanda Montenegro
+Wagner Moura
+Selton Mello
+Sombra
+Eco
+Reflexo
+Segredo
+Destino
+Vento
+Labirinto
+Tempestade
+Abismo
+Raio
+Fumaça
+Espelho
+Cicatriz
+Veneno
+Feitiço
+Eclipse
+Ponte
+Muralha
+Naufrágio
+Oásis
+Pântano
+Sussurro
+Grito
+Abraço
+Beijo
+Lágrima
+Sorriso
+Suor
+Sangue
+Coração
+Cérebro
+Memória
+Pesadelo
+Paraíso
+Inferno
+Purgatório
+Caos
 Ordem
-Orgulhoso
-Observar
-Oposição
-Oportunidade
-Oportuno
-Ociosidade
-Organização
-Olhar
-Opressor
-Opulência
-Omissão
-Otimizar
-Obtuso
-Oneroso
-Obcecado
-Opressão
-Obrigação
-Orientação
-Ocorrência
-Oligarquia
-Ousado
-Ostensivo
-Ofício
-Original
-Otimista
-Ostentação
-Ofuscar
-Ofensa
-Oração
-Oráculo
-Obscuro
-Oposto
-Obstáculo
-Ocasião
-Opção
-Onipotente
-Opulento
-Perseverança
-Perspicaz
-Perspectiva
-Peculiar
-Presunçoso
-Paradigma
-Prudente
-Propósito
-Prerrogativa
-Presunção
-Pandemia
-Premissa
-Plenitude
-Pragmático
-Prepotente
-Pêsames
-Paz
-Perspicácia
-Pertinente
-Pródigo
-Prodígio
-Promíscuo
-Passível
-Preconceito
-Precedente
-Plena
-Perfídia
-Prudência
-Pressa
-Primazia
-Pretensioso
-Paixão
-Paradoxo
-Pretensão
-Percepção
-Proeminente
-Preliminar
-Poder
-Processo
-Paciência
-Problema
-Pejorativo
-Preceito
-Proposição
-Paralelo
-Prosaico
-Primordial
-Presteza
-Perene
-Piedade
-Presságio
-Parcial
-Plausível
-Profano
-Perverso
-Privilégio
-Provérbio
-Perplexo
-Prendado
-Prognóstico
-Palavra
-Pernicioso
-Pedante
-Precisão
-Preciso
-Provisão
-Princípio
-Parâmetro
-Profícuo
-Penhor
-Qualidade
-Queijo
-Quantidade
-Quadro
-Quieto
-Quente
-Quiz
-Queda
-Quartel
-Quatro
-Quintal
-Quadra
-Respeito
-Resiliência
-Reciprocidade
-Referência
-Relativo
-Resignação
-Recesso
-Remissão
-Retórica
-Respaldo
-Resolução
-Redenção
-Responsabilidade
-Resistência
-Reflexão
-Racismo
-Relação
-Razão
-Relevante
-Relevância
-Ridículo
-Realizar
-Receio
-Remoto
-Reputação
-Rotina
-Retidão
-Rancor
-Regular
-Ruim
-Religião
-Racional
-Rude
-Refúgio
-Radical
-Regra
-Réplica
-Rima
-Repúdio
-Restrito
-Receoso
-Significado
-Sagaz
-Sublime
-Sucinto
-Serenidade
-Sororidade
-Senso
-Sádico
-Sagacidade
-Sapiência
-Solidariedade
-Sucesso
-Sinônimo
-Síntese
-Singular
-Sutil
-Superficial
-Saudade
-Solícito
-Solene
-Salutar
-Sonho
-Sanidade
-Sensato
-Sede
-Sentido
-Sarcástico
-Satisfação
-Saga
-Situação
-Saber
-Sina
-Soberano
-Segmento
-Suma
-Sentimento
-Substantivo
-Solitude
-Sutileza
-Sabedoria
-Singelo
-Sistemático
-Supremacia
-Sarcasmo
-Soberbo
-Solidário
-Sensatez
-Símbolo
-Sensível
-Termo
-Trivial
-Tênue
-Tribulação
-Tempo
-Tolo
-Tangível
-Temor
-Tráfego
-Ternura
-Talento
-Tolerância
-Transição
-Tecnologia
-Temperança
-Tirano
-Tópico
-Tranquilo
-Teoria
-Triste
-Tristeza
-Tédio
-Translúcido
-Tragédia
-Terra
-Tese
-Tensão
-Tradição
-Tímido
-Terno
-Tráfico
-Tema
-Tóxico
-Utopia
-Universo
-União
-Ufanismo
-Urbanidade
-Unidade
-Umbral
-Urbano
-Ultraje
-Ubíquo
-Ubiquidade
-Utensílio
-Usuário
-Universal
-Urgente
-Urgência
-Ultimato
-Utilidade
-Urbe
-Urso
-Universitário
-Vereda
-Vagabundo
-Virtude
-Vigor
-Vil
-Vocabulário
-Vertente
-Verídico
-Versátil
-Volátil
-Vida
-Vigente
-Vigoroso
-Veemente
-Volúpia
-Veemência
-Vulgar
-Varonil
-Volúvel
-Vaidade
-Verdade
-Vulnerável
-Vulgo
-Vício
-Ventura
-Vigência
-Viagem
-Voga
-Vertiginoso
-Viril
-Valor
-Veracidade
-Veredito
-Vestígio
-Visceral
-Vale
-Vontade
-Virtuoso
-Visão
-Vínculo
-Vital
-Vivaz
-Violência
-Virtual
-Vazio
-Velho
+Justiça
+Crime
+Castigo
+Prisão
+Liberdade
+Disfarce
+Máscara
+Cortina
+Plateia
+Aplauso
+Vaias
+Ritmo
+Melodia
+Acorde
+Solo
+Dueto
+Orquestra
+Maestro
+Banda
+Vibração
+Pulsação
+Ampulheta
+Calendário
+Inverno
+Verão
+Primavera
+Outono
+Geada
+Neblina
+Crepúsculo
+Alvorada
+Meio-dia
+Meia-noite
+Luz
+Chama
+Cinzas
+Poeira
+Lama
+Cristal
+Ferro
+Ferrugem
+Remédio
+Vacina
+Vírus
+Bactéria
+Célula
+DNA
+Evolução
+Extinção
+Fóssil
+Horizonte
+Aurora
+Tornado
+Avalanche
+Faísca
+Lava
+Maré
 Vácuo
-Xenofobia
-Xícara
-Xale
-Xará
-Xodó
-Xerife
-Xadrez
-Xampu
-Xarope
-Xilogravura
-Xeque-mate
-Xerox
-Xamã
-Zelo
-Zelar
-Zeloso
-Zangado
-Zumbi
-Zoológico
-Zombeteiro
-Zoeira
-Zen
-Zênite
-Zombaria
-Zona
-Zero
-Zebra
-Zíper
-Zumbido
-Zarpar
-Zodíaco
-Zelador
-Zigoto
-Zoologia
-Zimbro
-Zepelim
+Gravidade
+Âncora
+Chave
+Cadeado
+Corrente
+Foice
+Tocha
+Cetro
+Coroa
+Algema
+Bandeira
+Berrante
+Esqueleto
+Crânio
+Pulmão
+Digitais
+Pupila
+Antídoto
+Sótão
+Cave
+Túnel
+Trincheira
+Farol
+Ruína
+Santuário
+Cemitério
+Hospício
+Tribunal
+Fronteira
+Cais
+Brilho
+Vertigem
+Equilíbrio
+Ritual
+Sintonia
+Ressonância
+Palmeiras
+Botafogo
+Grêmio
+Bragantino
+Fluminense
+Athletico-PR
+Internacional
+Fortaleza
+São Paulo
+Cuiabá
+Corinthians
+Cruzeiro
+Vasco
+Bahia
+Santos
+Goiás
+Coritiba
+América-MG
+Atlético-MG
+Vitória
+Juventude
+Criciúma
+Atlético-GO
+Google
+YouTube
+Spotify
+WhatsApp
+Instagram
+TikTok
+Netflix
+Darth Vader
+Batman
+Coringa
+Bombeiro
+Policial
+Médico
+Chef de Cozinha
+Mergulhador
+Piloto
+Astronauta
+Deserto
+Oásis
+Amazônia
+Pantanal
+Pólo Norte
+Sintetizador
+Pedaleira
+Metrônomo
+Partitura
+Tablatura
+Improviso
+Vinho
+Vampiro
+Balança
+Rede
+Bateria
+Língua
+Porão
+Escada Rolante
+Cassino
+Cofre
+Laboratório
+Aquário
+Avião de Papel
+Paraquedas
+Havaianas
+Filtro de Barro
+Rede de Balanço
+Paredão
+Trio Elétrico
+Roda de Samba
+Boteco
+Jabuticaba
+Algoritmo
+Bitcoin
+Metaverso
+Inteligência Artificial
+QR Code
+Bluetooth
+Wi-Fi
+Sinalizador
+Corda de Rapel
+Bote Inflável
+Binóculos
+Isqueiro
+Canivete Suíço
+Perfume
+Algodão
+Veludo
+Pimenta
+Gelo
+Lixa
+Seda
+Buraco Negro
+Cometa
+Supernova
+Telescópio Hubble
+Estrela Cadente
+Marte
+Anéis de Saturno
+Gravidade Zero
+Esgrima
+Salto em Distância
+Maratona
+Ginástica Artística
+Nado Sincronizado
+Arqueirismo
+Pingue-pongue
+Surfe
+Handebol
+Polo Aquático
+Vitrola
+Máquina de Escrever
+Telefone de Disco
+Fita VHS
+Walkman
+Disquete
+Câmera Analógica
+Lâmpada de Neon
+Globo de Espelhos
+Cama Elástica
+Tobogã
+Teleférico
+Tirolesa
+Bungee Jump
+Paraquedas
+Pedalinho
+Jet Ski
+Pão de Queijo
+Acarajé
+Paçoquita
+Guaraná
+Garapa
+Pingado
+Coxinha de Jaca
+Torta de Limão
+Pamonha
+Pé de Moleque
+Cuscuz Paulista
+Quindim
+Brigadeiro de Panela
+Pandeiro
+Triângulo
+Berimbau
+Cuíca
+Carro de Som
+Feira Livre
+Varal de Roupas
+Filtro de Linha
